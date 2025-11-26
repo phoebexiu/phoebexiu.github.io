@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>杭州娃哈哈双语学校IT课程 | Wahaha Bilingual School IT Courses</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入CSS文件 -->
+    <script>
+        function toggleLanguage(lang) {
+            document.querySelectorAll(".zh").forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+            document.querySelectorAll(".en").forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 语言切换 -->
+    <div class="language-switch">
+        <button onclick="toggleLanguage('zh')">中文</button>
+        <button onclick="toggleLanguage('en')">English</button>
+    </div>
+    
+    <!-- 页头 -->
+    <header>
+        <div class="logo">
+            <img src="WahahaLogo.png" alt="学校Logo" width="150">
+        </div>
+        <h1 class="zh">杭州娃哈哈双语学校IT课程</h1>
+        <h1 class="en" style="display:none;">Wahaha Bilingual School IT Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="zh">主页</a><a href="#home" class="en" style="display:none;">Home</a></li>
+                <li><a href="#courses" class="zh">年级课程</a><a href="#courses" class="en" style="display:none;">Courses</a></li>
+                <li><a href="#achievements" class="zh">学生成果</a><a href="#achievements" class="en" style="display:none;">Achievements</a></li>
+                <li><a href="#about" class="zh">关于我们</a><a href="#about" class="en" style="display:none;">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 欢迎横幅 -->
+    <section id="hero">
+        <h2 class="zh">欢迎访问杭州娃哈哈双语学校IT课程网站</h2>
+        <h2 class="en" style="display:none;">Welcome to Wahaha Bilingual School IT Courses</h2>
+        <p class="zh">探索我们的创新学习项目与学生的精彩成果！</p>
+        <p class="en" style="display:none;">Explore our innovative learning programs and students' exciting achievements!</p>
+        <button onclick="window.location.href='#courses'" class="zh">查看更多课程</button>
+        <button onclick="window.location.href='#courses'" class="en" style="display:none;">View Courses</button>
+    </section>
+
+    <!-- 课程展示 -->
+    <section id="courses">
+        <h2 class="zh">课程展示</h2>
+        <h2 class="en" style="display:none;">Courses</h2>
+        <div class="course">
+            <h3 class="zh">6年级 IT课程</h3>
+            <h3 class="en" style="display:none;">Grade 6 IT Course</h3>
+            <p class="zh">学习基础计算机技能、编程入门、数字创作。</p>
+            <p class="en" style="display:none;">Learn basic computer skills, introductory programming, and digital creation.</p>
+            <a href="G6.HTML" class="course-btn zh">查看课程详情</a>
+            <a href="G6.HTML" class="course-btn en" style="display:none;">View Details</a>
+        </div>
+        <div class="course">
+            <h3 class="zh">7年级 IT课程</h3>
+            <h3 class="en" style="display:none;">Grade 7 IT Course</h3>
+            <p class="zh">学习数据处理、网站设计基础、AI入门。</p>
+            <p class="en" style="display:none;">Learn data processing, web design basics, and AI introduction.</p>
+            <a href="G7.HTML" class="course-btn zh">查看课程详情</a>
+            <a href="G7.HTML" class="course-btn en" style="display:none;">View Details</a>
+        </div>
+        <div class="course">
+            <h3 class="zh">8年级 IT课程</h3>
+            <h3 class="en" style="display:none;">Grade 8 IT Course</h3>
+            <p class="zh">学习游戏编程、数据科学、人工智能应用。</p>
+            <p class="en" style="display:none;">Learn game programming, data science, and AI applications.</p>
+            <a href="G8.HTML" class="course-btn zh">查看课程详情</a>
+            <a href="G8.HTML" class="course-btn en" style="display:none;">View Details</a>
+        </div>
+        <div class="course">
+            <h3 class="zh">9年级 IT课程</h3>
+            <h3 class="en" style="display:none;">Grade 9 IT Course</h3>
+            <p class="zh">高级编程、人工智能项目。</p>
+            <p class="en" style="display:none;">Advanced programming, AI projects, and cloud computing basics.</p>
+            <a href="G9.HTML" class="course-btn zh">查看课程详情</a>
+            <a href="G9.HTML" class="course-btn en" style="display:none;">View Details</a>
+        </div>
+    </section> <!-- end of courses -->
+
+    <!-- New course sections -->
+    <section id="ai-literacy">
+        <h2 class="zh">AI素养课程</h2>
+        <h2 class="en" style="display:none;">AI Literacy</h2>
+        <p class="zh">了解AI基础概念、伦理与应用。</p>
+        <p class="en" style="display:none;">Learn basic AI concepts, ethics, and applications.</p>
+        <a href="AI_Literacy.html" class="course-btn zh">课程详情</a>
+        <a href="AI_Literacy.html" class="course-btn en" style="display:none;">Course Details</a>
+        <a href="AI_Literacy_resources.html" class="course-btn zh">课程资源</a>
+        <a href="AI_Literacy_resources.html" class="course-btn en" style="display:none;">Resources</a>
+    </section>
+
+    <section id="ap-cs-a">
+        <h2 class="zh">AP 计算机科学 A</h2>
+        <h2 class="en" style="display:none;">AP Computer Science A</h2>
+        <p class="zh">Java 程序设计与面向对象编程准备课程。</p>
+        <p class="en" style="display:none;">Java programming and OOP preparation for AP CSA.</p>
+        <a href="AP_CS_A.html" class="course-btn zh">课程详情</a>
+        <a href="AP_CS_A.html" class="course-btn en" style="display:none;">Course Details</a>
+        <a href="AP_CS_A_resources.html" class="course-btn zh">课程资源</a>
+        <a href="AP_CS_A_resources.html" class="course-btn en" style="display:none;">Resources</a>
+    </section>
+
+    <section id="igcse-alevel">
+        <h2 class="zh">IGCSE / ALevel 计算机科学</h2>
+        <h2 class="en" style="display:none;">IGCSE / ALevel Computer Science</h2>
+        <p class="zh">面向国际考试的计算机科学课程与项目实践。</p>
+        <p class="en" style="display:none;">Computer science courses and projects for international exams.</p>
+        <a href="IGCSE_ALevel.html" class="course-btn zh">课程详情</a>
+        <a href="IGCSE_ALevel.html" class="course-btn en" style="display:none;">Course Details</a>
+        <a href="IGCSE_ALevel_resources.html" class="course-btn zh">课程资源</a>
+        <a href="IGCSE_ALevel_resources.html" class="course-btn en" style="display:none;">Resources</a>
+    </section>
+    
+    <!-- 学生成果展示 -->
+    <section id="achievements">
+        <h2 class="zh">学生成果展示</h2>
+        <h2 class="en" style="display:none;">Student Achievements</h2>
+        <p class="zh">每个年级的学生将展示他们在课程中的项目与成就。</p>
+        <p class="en" style="display:none;">Students from each grade will showcase their projects and achievements.</p>
+        <button onclick="window.location.href='http://docs.qq.com/slide/DR3ZYVENHeWNISVZG'" class="zh">查看学生成果</button>
+        <button onclick="window.location.href='http://docs.qq.com/slide/DR3ZYVENHeWNISVZG'" class="en" style="display:none;">View Achievements</button>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="contact">
+            <h3 class="zh">联系我们</h3>
+            <h3 class="en" style="display:none;">Contact Us</h3>
+            <p class="zh">地址：杭州娃哈哈双语学校</p>
+            <p class="en" style="display:none;">Address: Wahaha Bilingual School, Hangzhou</p>
+            <p>邮箱 chegel.chen@wahahaschools.org</p>
+        </div>
+        <div class="social-media">
+            <h3 class="zh">关注我们</h3>
+            <h3 class="en" style="display:none;">Follow Us</h3>
+            <a href="https://weixin.com" target="_blank">小红书</a>
+            <a href="https://weibo.com" target="_blank">抖音</a>
+        </div>
+        <p>&copy; 2025 杭州娃哈哈双语学校 | Wahaha Bilingual School</p>
+    </footer>
+</body>
+</html>
